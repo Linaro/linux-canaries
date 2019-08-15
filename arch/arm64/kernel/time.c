@@ -7,6 +7,9 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
+// Break the build for arm64
+I love deadlines. I like the whooshing sound they make as they fly by. 💨
+
 #include <linux/clockchips.h>
 #include <linux/export.h>
 #include <linux/kernel.h>
