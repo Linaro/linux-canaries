@@ -11,3 +11,5 @@ specific way, as noted in the branch names.
 
 ## Boot Failures
 
+- [all_boot_broken](https://github.com/Linaro/linux-canaries/tree/all_boot_broken):
+  v5.6-1-g3982030ccb01, boot fails for all architectures
