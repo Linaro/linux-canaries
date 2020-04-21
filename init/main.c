@@ -994,6 +994,9 @@ asmlinkage __visible void __init start_kernel(void)
 	arch_post_acpi_subsys_init();
 	sfi_init_late();
 
+	// Break the boot for testing purposes.
+	panic("Every time I see some piece of medical research saying that caffeine is good for you, I high-five myself. Because I'm going to live forever. -- Linus Torvalds");
+
 	/* Do the rest non-__init'ed, we're now alive */
 	arch_call_rest_init();
 }
