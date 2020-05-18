@@ -6,8 +6,7 @@ very specific way, as noted in the branch names. Each of the branches and tags
 in this repository are expected to not change, so that they can be used for
 integration/regression testing.
 
-The branches are all loosely based on mainline, and the repository has mainline
-tags available for use.
+The branches are all loosely based on mainline.
 
 ## Reference Cases
 
