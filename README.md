@@ -24,3 +24,7 @@ tags available for use.
 
 - [all_boot_broken](https://github.com/Linaro/linux-canaries/tree/all_boot_broken):
   v5.6-1-g3982030ccb01, boot fails for all architectures
+
+## Example kconfig
+
+- [lkft.config](lkft.config): Example valid kernel config fragment
