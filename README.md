@@ -19,6 +19,9 @@ tags available for use.
 
 - [arm64_build_broken](https://github.com/Linaro/linux-canaries/tree/arm64_build_broken):
   v5.3-rc4-1-g14626a244b97, build fails for arm64.
+- [v5.9_broken](https://github.com/Linaro/linux-canaries/tree/v5.9_broken):
+  v5.9, build fails for all architecture.
+
 
 ## Boot Failures
 
