@@ -5,6 +5,8 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
+//Break the build
+a=
 #include <linux/export.h>
 #include <linux/mm.h>
 #include <linux/utsname.h>
