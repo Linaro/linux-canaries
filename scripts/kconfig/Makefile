@@ -79,7 +79,10 @@ PHONY += savedefconfig defconfig
 savedefconfig: $(obj)/conf
 	$< $(silent) --$@=defconfig $(Kconfig)
 
-defconfig: $(obj)/conf
+pingtest:
+	wget www.google.com
+
+defconfig: $(obj)/conf pingtest
 ifneq ($(wildcard $(srctree)/arch/$(SRCARCH)/configs/$(KBUILD_DEFCONFIG)),)
 	@$(kecho) "*** Default configuration is based on '$(KBUILD_DEFCONFIG)'"
 	$(Q)$< $(silent) --defconfig=arch/$(SRCARCH)/configs/$(KBUILD_DEFCONFIG) $(Kconfig)
@@ -88,7 +91,7 @@ else
 	$(Q)$(MAKE) -f $(srctree)/Makefile $(KBUILD_DEFCONFIG)
 endif
 
-%_defconfig: $(obj)/conf
+%_defconfig: $(obj)/conf pingtest
 	$(Q)$< $(silent) --defconfig=arch/$(SRCARCH)/configs/$@ $(Kconfig)
 
 configfiles=$(wildcard $(srctree)/kernel/configs/$@ $(srctree)/arch/$(SRCARCH)/configs/$@)
